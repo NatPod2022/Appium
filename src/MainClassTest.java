@@ -1,12 +1,18 @@
-import org.junit.Assert;
 import org.junit.Test;
 
-public class MainClassTest extends MainClass{
+public class MainClassTest extends MainClass {
     @Test
-    public void testGetClassNumber()
-    {
-        if(class_number>45)
-            Assert.fail("Ошибка сравнения");
+    public void testGetClassString() {
+        //String substring1 = "Hello";
+        //String substring2 = "Hello";
+
+        if (class_string.contains("Hello")||class_string.contains("hello"))
+        {
+            System.out.println("есть приветствие");
+        } else {
+            System.out.println("нет приветствия");
         }
+
     }
+}
 
