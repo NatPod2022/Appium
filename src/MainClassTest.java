@@ -1,14 +1,12 @@
+import org.junit.Assert;
 import org.junit.Test;
 
 public class MainClassTest extends MainClass{
     @Test
-    public void testGetLocalNumber()
+    public void testGetClassNumber()
     {
-        int k=this.getLocalNumber();
-        if (k==14) {
-            System.out.println("Верное значение");
-        } else {
-            System.out.println("Неверное значение.Требуется проверка");
+        if(class_number>45)
+            Assert.fail("Ошибка сравнения");
         }
     }
-}
+
